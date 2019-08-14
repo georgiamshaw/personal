@@ -13,10 +13,10 @@
       - [ ] Test on the front end
       - [ ] Test on the back end
       - [ ] Use Test Driven Development to build tests before I write code
-- [ ] Have a fantastic design - clear, minimalisti, yet fun and engaging. 
+- [ ] Have a fantastic design - clear, minimalisti, yet fun and engaging.
 - [ ] Provide information about me! A portfolio of my skills, achievements and projects.
 - [ ] Make the website accessible as I go - it should be engrained in my design and building, not an afterthought.
- 
+
 
 ## Stretch goals:
 - [ ] Make an API call

@@ -25,3 +25,29 @@ test('home route works', t => {
     t.end();
   });
 });
+
+test('public route returns correct status code and content type', t => {
+  supertest(router)
+  .get('/public/script.js')
+  .end((error, response) => {
+    t.error(error, 'script.js does not throw an error');
+    t.equal(response.statusCode, 200, 'script.js returns a 200 status code');
+    t.equal(
+      response.headers['content-type'],
+      'application/javascript',
+      'script.js returns the correct content type'
+    );
+  })
+
+  supertest(router)
+  .get('/public/style.css')
+  .end((error, response) => {
+    t.error(error, 'style.css does not throw an error');
+    t.equal(response.statusCode, 200, 'style.css returns a 200 status code');
+    t.equal(
+      response.headers['content-type'],
+      'text/css',
+      'style.css returns the correct content type'
+    );
+  })
+})

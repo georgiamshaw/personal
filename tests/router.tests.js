@@ -12,7 +12,7 @@ test('home route works', t => {
   .get('/')
   .expect(200)
   .end((error, response) => {
-    t.error(error, 'an error has been thrown')
+    t.error(error, 'an error has not been thrown')
     t.equal(
       response.statusCode,
       200,

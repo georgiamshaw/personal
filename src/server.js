@@ -1,7 +1,7 @@
 // requiring the http module
 const http = require('http');
 // requiring the router.js file
-const router = require('.router');
+const router = require('./router');
 // port either falls on one assigned to it or on 3000 if no port is assigned
 let port = process.env.PORT || 3000;
 // creating the server

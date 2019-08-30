@@ -8,7 +8,7 @@ test('tests are running', t => {
 });
 
 test('home route works', t => {
-  supertest(handleHome)
+  supertest(router)
   .get('/')
   .expect(200)
   .end((error, response) => {
@@ -27,7 +27,7 @@ test('home route works', t => {
 });
 
 test('public route returns correct status code and content type', t => {
-  supertest(handlePublic)
+  supertest(router)
   .get('/public/script.js')
   .expect(200)
   .end((error, response) => {
@@ -40,7 +40,7 @@ test('public route returns correct status code and content type', t => {
     );
   })
 
-  supertest(handlePublic)
+  supertest(router)
   .get('/public/style.css')
   .end((error, response) => {
     t.error(error, 'style.css does not throw an error');

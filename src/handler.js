@@ -1,4 +1,8 @@
-if (request.url === '/') {
+const fs = require('fs');
+const path = require('path');
+const url = require('url');
+
+const handleHome = (request, response) => {
   const filePath = path.join(__dirname, '..', 'public/index.html');
   fs.readFile(filePath, (error, file) => {
     if (error) {
@@ -11,7 +15,7 @@ if (request.url === '/') {
   });
 }
 
-if (request.url.startsWith('/public')) {
+const handlePublic = (request, response) => {
     const filePath = path.join(__dirname, '..', request.url);
     const extension = path.extname(request.url);
     const extensionType = {
@@ -30,3 +34,5 @@ if (request.url.startsWith('/public')) {
       }
     });
 }
+
+module.exports = { handleHome, handlePublic };

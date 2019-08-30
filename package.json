@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "- [ ] Demonstrate the skills I have learnt at Founders & Coders\r   - [ ] Use CSS flexbox and/or CSS grid to achieve a design that works on all screens.\r   - [ ] Install dependencies\r   - [ ] Build a server and a router\r   - [ ] Deploy on Heroku\r   - [ ] Use continuous integration (Travis)\r   - [ ] Testing\r       - [ ] Test on the front end\r       - [ ] Test on the back end\r       - [ ] Use Test Driven Development to build tests before I write code\r - [ ] Have a fantastic design - clear, minimalisti, yet fun and engaging.\r - [ ] Provide information about me! A portfolio of my skills, achievements and projects.\r - [ ] Make the website accessible as I go - it should be engrained in my design and building, not an afterthought.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape ./tests/router.tests.js | tap-spec",
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgiamshaw/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgiamshaw/portfolio/issues"
+  },
+  "homepage": "https://github.com/georgiamshaw/portfolio#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0"
+  }
+}

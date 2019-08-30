@@ -1,0 +1,17 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 10rem;
+  width: 10rem;
+  border: 2px solid black;
+  align-self: center;
+}
+
+.inputInfo, .submitButton {
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.submitButton {
+  cursor: pointer;
+}

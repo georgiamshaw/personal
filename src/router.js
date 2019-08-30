@@ -2,7 +2,7 @@ const fs = require('fs');
 const url = require('url');
 const path = require('path');
 
-const router = (request, response) => {
+const handleHome = (request, response) => {
   if (request.url === '/') {
     const filePath = path.join(__dirname, '..', 'public/index.html');
     fs.readFile(filePath, (error, file) => {
@@ -14,13 +14,17 @@ const router = (request, response) => {
         response.end(file);
       }
     });
-  } else if (request.url.startsWith('public')) {
+  }
+}
+
+const handlePublic = (request, response) => {
+  if (request.url.startsWith('/public')) {
       const filePath = path.join(__dirname, '..', request.url);
       const extension = path.extname(request.url);
       const extensionType = {
         '.html': 'text/html',
         '.css': 'text/css',
-        '.js': 'application/ajavscript',
+        '.js': 'application/javascript',
         '.ico': 'image/x-icon'
       };
       fs.readFile(filePath, (error, file) => {
@@ -35,4 +39,4 @@ const router = (request, response) => {
   }
 }
 
-module.exports = router;
+module.exports = { handleHome, handlePublic };

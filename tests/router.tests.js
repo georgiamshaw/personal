@@ -1,6 +1,6 @@
 const test = require('tape');
 const supertest = require('supertest');
-const router = require('../src/router');
+const { handleHome, handlePublic } = require('../src/router');
 
 test('tests are running', t => {
   t.equal(1, 1, 'our tests are running');
@@ -8,7 +8,7 @@ test('tests are running', t => {
 });
 
 test('home route works', t => {
-  supertest(router)
+  supertest(handleHome)
   .get('/')
   .expect(200)
   .end((error, response) => {
@@ -27,8 +27,9 @@ test('home route works', t => {
 });
 
 test('public route returns correct status code and content type', t => {
-  supertest(router)
+  supertest(handlePublic)
   .get('/public/script.js')
+  .expect(200)
   .end((error, response) => {
     t.error(error, 'script.js does not throw an error');
     t.equal(response.statusCode, 200, 'script.js returns a 200 status code');
@@ -39,7 +40,7 @@ test('public route returns correct status code and content type', t => {
     );
   })
 
-  supertest(router)
+  supertest(handlePublic)
   .get('/public/style.css')
   .end((error, response) => {
     t.error(error, 'style.css does not throw an error');
@@ -49,5 +50,6 @@ test('public route returns correct status code and content type', t => {
       'text/css',
       'style.css returns the correct content type'
     );
+    t.end();
   })
-})
+});

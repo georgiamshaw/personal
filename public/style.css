@@ -1,17 +1,32 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.formWrapper > * {
+  align-self: center;
+}
+
 .contactForm {
   display: flex;
   flex-direction: column;
-  margin: 5rem 10rem;
+  /* margin: 5rem 10rem; */
   width: 10rem;
   border: 2px solid black;
-  align-self: center;
 }
 
 .inputInfo, .submitButton {
   margin: 0.5rem;
   padding: 1rem;
+  border-radius: 0.4rem;
+  border: solid gray 1px;
+  font-size: 0.9rem;
 }
 
 .submitButton {
   cursor: pointer;
+  background-image: linear-gradient(to bottom right, #37baf5, #4285f4);
+  border: none;
+  color: white;
 }

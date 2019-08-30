@@ -8,7 +8,9 @@
   <title>Georgia Shaw</title>
 </head>
 <body>
-  <form class="contactForm" method="POST" action="/messagesubmitted">
+  <div class="formWrapper">
+    <h2>Get in touch</h2>
+    <form class="contactForm" method="POST" action="/messagesubmitted">
         <label for="firstName"></label>
         <input class="inputInfo" type="text" name="firstName" id="firstName" placeholder="First Name">
         <label for="lastName"></label>
@@ -19,6 +21,7 @@
         <input class="inputInfo" type="text" name="messageContent" id="messageContent" placeholder="Message">
         <button class="submitButton">Submit</button>
     </form>
+  </div>
 <script src="script.js"></script>
 </body>
 </html>

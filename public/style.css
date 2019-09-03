@@ -8,6 +8,57 @@ body {
   margin: 0;
 }
 
+.white-box {
+  background: #fff1c1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.red-box-index-1 {
+  background: #fe5f55;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.blue-box-index {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+}
+
+.red-box-index-2 {
+  background: #fe5f55;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.dark-red-box-index-1 {
+  background: #A64942;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.dark-red-box-index-2 {
+  background: #A64942;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
 /*FORM*/
 
 .formWrapper {

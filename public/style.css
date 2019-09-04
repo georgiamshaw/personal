@@ -103,6 +103,32 @@ body {
   position: relative;
 }
 
+p:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 6px;
+  display: block;
+  right: 0;
+  background: #293462;
+  transition: width .5s ease;
+  -webkit-transition: width .5s ease;
+}
+
+p:hover:after {
+  width: 100%;
+  left: 0;
+  background: #293462;
+}
+
+.blue-menu-item-index:after {
+  background: #fe5f55;
+}
+
+.blue-menu-item-index:hover:after {
+  background: #fe5f55;
+}
+
 h1 {
   color: #293462;
   font-size: 6rem;

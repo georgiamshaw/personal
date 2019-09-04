@@ -191,6 +191,79 @@ p {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.red-menu-item-wrap-1 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.red-menu-item-wrap-2 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.blue-menu-item-wrap-1 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.blue-menu-item-wrap-1 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+p {
+  font-size: 2rem;
+  /* padding: 0 1rem; */
+  margin: 0;
+  align-self: center;
+  color: #fff1c1;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+p:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px;
+  display: block;
+  right: 0;
+  margin-top: 10px;
+  background: #293462;
+  transition: width .5s ease;
+  -webkit-transition: width .5s ease;
+}
+
+p:hover:after {
+  width: 100%;
+  left: 0;
+  background: #293462;
+}
+
+.blue:after {
+  background: #fe5f55;
+}
+
+.blue:hover:after {
+  background: #fe5f55;
+}
+
 /*FORM*/
 
 .formWrapper {

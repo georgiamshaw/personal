@@ -59,6 +59,50 @@ body {
   grid-row-end: 5;
 }
 
+.georgia-name-wrap {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.blue-box-inside-1 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.blue-box-inside-2 {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.red-box-inside-1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.red-box-inside-2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
 /*FORM*/
 
 .formWrapper {

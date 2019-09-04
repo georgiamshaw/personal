@@ -1,6 +1,6 @@
 /*INDEX PAGE */
 
-body {
+.index-body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 25vh 25vh 25vh 25vh;
@@ -145,6 +145,50 @@ p {
   color: #fff1c1;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
+}
+
+/*ABOUT PAGE*/
+
+.about-body {
+  background-color: #fff1c1;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50vh 50vh;
+}
+
+.red-box {
+  background-color: #fe5f55;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.blue-box {
+  background-color: #293462;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.red-box-small {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.blue-box-small {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 /*FORM*/

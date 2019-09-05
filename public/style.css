@@ -109,7 +109,7 @@
   grid-row-end: 3;
 }
 
-h1 {
+.georgia-name {
   color: #293462;
   font-size: 6rem;
   margin: 0;
@@ -117,7 +117,8 @@ h1 {
   font-family: 'Arvo', serif;
 }
 
-p {
+.blue-menu-item-index,
+.red-menu-item-index {
   font-size: 2.9rem;
   margin: 0;
   align-self: center;
@@ -209,7 +210,8 @@ p {
   justify-content: flex-start;
 }
 
-p {
+.red-menu-item,
+.blue-menu-item {
   font-size: 2rem;
   /* padding: 0 1rem; */
   margin: 0;
@@ -221,7 +223,10 @@ p {
 
 /*HOVER */
 
-p:after {
+.red-menu-item-index:after,
+.blue-menu-item-index:after,
+.red-menu-item:after,
+.blue-menu-item:after {
   content: '';
   position: absolute;
   width: 0;
@@ -233,47 +238,24 @@ p:after {
   -webkit-transition: width .5s ease;
 }
 
-p:hover:after {
+.red-menu-item-index:hover:after,
+.blue-menu-item-index:hover:after,
+.red-menu-item:hover:after,
+.blue-menu-item:hover:after {
   width: 100%;
   left: 0;
   background-color: #293462;
 }
 
-.blue-menu-item-index:after {
-  background-color: #fe5f55;
-}
-
-.blue-menu-item-index:hover:after {
-  background-color: #fe5f55;
-}
-
-p:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 5px;
-  display: block;
-  right: 0;
-  margin-top: 10px;
-  background: #293462;
-  transition: width .5s ease;
-  -webkit-transition: width .5s ease;
-}
-
-p:hover:after {
-  width: 100%;
-  left: 0;
-  background: #293462;
-}
-
+.blue-menu-item-index:after,
 .blue-menu-item:after {
-  background: #fe5f55;
+  background-color: #fe5f55;
 }
 
+.blue-menu-item-index:hover:after,
 .blue-menu-item:hover:after {
-  background: #fe5f55;
+  background-color: #fe5f55;
 }
-
 
 /*FORM*/
 

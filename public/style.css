@@ -129,7 +129,7 @@
 
 /*ABOUT PAGE*/
 
-.nav-wrap,
+.body-wrap,
 .red-box,
 .blue-box,
 .red-box-small,
@@ -137,7 +137,7 @@
   display: grid;
 }
 
-.nav-wrap {
+.body-wrap {
   background-color: #fff1c1;
   margin: 0;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -297,7 +297,8 @@
 .main-content-wrap {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  /* flex-wrap: wrap;
+  justify-content: center; */
 }
 
 .title-of-page {
@@ -316,6 +317,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  border: 2px solid black;
 }
 
 .language-logo-wrap {
@@ -332,6 +334,7 @@
   padding: 1rem;
   width: 8rem;
   height: 8rem;
+  cursor: pointer;
 }
 
 .html5,

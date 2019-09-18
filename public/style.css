@@ -129,7 +129,7 @@
 
 /*ABOUT PAGE*/
 
-.body-wrap,
+.nav-wrap,
 .red-box,
 .blue-box,
 .red-box-small,
@@ -137,7 +137,7 @@
   display: grid;
 }
 
-.body-wrap {
+.nav-wrap {
   background-color: #fff1c1;
   margin: 0;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -294,6 +294,12 @@
 
 /*TITLE OF PAGE*/
 
+.main-content-wrap {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
 .title-of-page {
   font-family: "Poppins", sans-serif;
   text-decoration: underline;
@@ -305,8 +311,8 @@
 /* LANGUAGE LOGOS */
 
 .logo-container {
-  margin-top: 12rem;
-  margin-left: -10rem;
+  /* margin-top: 12rem;
+  margin-left: -10rem; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -323,7 +329,9 @@
   object-fit: contain;
   background-color: #fff4d2;
   margin: 1rem;
-  padding: 2rem;
+  padding: 1rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 .html5,
@@ -334,7 +342,8 @@
 .travis,
 .es6,
 .git,
-.heroku {
+.heroku,
+.handlebars {
   width: 5rem;
   height: 5rem;
 }
@@ -343,4 +352,9 @@
 .express {
   width: 6rem;
   height: 4rem;
+}
+
+.handlebars {
+  width: 8rem;
+  height: 8rem;
 }

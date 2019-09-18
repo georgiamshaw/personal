@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css?family=Arvo|Poppins&display=swap" rel="stylesheet">
-  <title>Georgia Shaw</title>
-</head>
-  <body class="about-body">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo|Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Georgia Shaw</title>
+  </head>
+
+  <body class="body-wrap">
+    <h1 class="title-of-page">Contact</h1>
     <div class="red-box">
       <div class="red-box-small">
         <div class="red-menu-item-wrap-1">
@@ -29,19 +34,43 @@
         </div>
       </div>
     </div>
-  <div class="formWrapper">
-    <h2>Get in touch</h2>
-    <form class="contactForm" method="POST" action="/messagesubmitted">
+    <div class="formWrapper">
+      <h2>Get in touch</h2>
+      <form class="contactForm" method="POST" action="/messagesubmitted">
         <label for="firstName"></label>
-        <input class="inputInfo" type="text" name="firstName" id="firstName" placeholder="First Name">
+        <input
+          class="inputInfo"
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="First Name"
+        />
         <label for="lastName"></label>
-        <input class="inputInfo" type="text" name="lastName" id="lastName" placeholder="Last Name">
+        <input
+          class="inputInfo"
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Last Name"
+        />
         <label for="emailAddress"></label>
-        <input class="inputInfo" type="text" name="emailAddress" id="emailAddress" placeholder="Email">
+        <input
+          class="inputInfo"
+          type="text"
+          name="emailAddress"
+          id="emailAddress"
+          placeholder="Email"
+        />
         <label for="messageContent"></label>
-        <input class="inputInfo" type="text" name="messageContent" id="messageContent" placeholder="Message">
+        <input
+          class="inputInfo"
+          type="text"
+          name="messageContent"
+          id="messageContent"
+          placeholder="Message"
+        />
         <button class="submitButton">Submit</button>
-    </form>
-  </div>
-</body>
+      </form>
+    </div>
+  </body>
 </html>

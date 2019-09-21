@@ -1,4 +1,10 @@
 /*INDEX PAGE */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
 
 .index-body,
 .white-box,
@@ -127,21 +133,50 @@
   cursor: pointer;
 }
 
-/*ABOUT PAGE*/
+/*--------------------------------ABOUT PAGE----------------------------------*/
 
-.body-wrap,
+.body-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.content-wrap {
+  height: 100vh;
+  width: 66vw;
+  background-color: #fff1c1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-wrap {
+  height: 100vh;
+  width: 34vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-wrap {
+    width: 100vw;
+    height: 70vh;
+    order: 2;
+  }
+
+  .nav-wrap {
+    width: 100vw;
+    height: 30vh;
+    order: 1;
+  }
+}
+
 .red-box,
 .blue-box,
 .red-box-small,
 .blue-box-small {
   display: grid;
-}
-
-.body-wrap {
-  background-color: #fff1c1;
-  margin: 0;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50vh 50vh;
 }
 
 .red-box,
@@ -153,18 +188,14 @@
 
 .red-box {
   background-color: #fe5f55;
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .blue-box {
   background-color: #293462;
-  grid-column-start: 6;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .red-box-small {
@@ -309,32 +340,29 @@
   font-size: 3rem;
 }
 
-/* LANGUAGE LOGOS */
+/*--------------------------- LANGUAGE LOGOS ---------------------------------*/
 
 .logo-container {
-  /* margin-top: 12rem;
-  margin-left: -10rem; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  align-self: center;
 }
 
 .language-logo-wrap {
-  /* height: 20vh;
-  width: 17vw; */
-  object-fit: contain;
-  /* border: 2px solid black; */
+  /* object-fit: contain; */
   display: flex;
   justify-content: center;
   align-items: center;
   object-fit: contain;
   background-color: #fff4d2;
   margin: 1rem;
-  padding: 1rem;
-  width: 8rem;
-  height: 8rem;
+  padding: 1.8rem;
+  width: 7rem;
+  height: 7rem;
   cursor: pointer;
+  align-self: center;
 }
 
 .html5,

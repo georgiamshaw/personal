@@ -149,6 +149,8 @@ body {
   background-color: #fff1c1;
   display: flex;
   flex-direction: column;
+  order: 1;
+  overflow: scroll;
 }
 
 .nav-wrap {
@@ -156,6 +158,7 @@ body {
   width: 32vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  order: 2;
 }
 
 @media only screen and (max-width: 600px) {
@@ -347,6 +350,7 @@ body {
   text-decoration-color: #fe5f55;
   color: #293462;
   font-size: 3rem;
+  margin: 3rem 0 0 3rem;
 }
 
 /*--------------------------- LANGUAGE LOGOS ---------------------------------*/
@@ -357,6 +361,7 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
   /* border: 2px solid black; */
   align-self: center;
+  margin-top: 2.5rem;
 }
 
 .language-logo-wrap {
@@ -404,7 +409,7 @@ body {
 .final-projects-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   align-self: center;
 }
 
@@ -417,7 +422,7 @@ body {
   background-color: #fff4d2;
   margin: 1rem;
   padding: 1.8rem;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 12rem;
   height: 12rem;
   cursor: pointer;
@@ -438,8 +443,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   align-self: center;
+  /* margin-bottom: 3.5rem; */
 }
 
 .learning-project {
@@ -451,9 +457,26 @@ body {
   background-color: #fff4d2;
   margin: 1rem;
   padding: 1.8rem;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 6rem;
   height: 6rem;
   cursor: pointer;
   align-self: center;
+}
+
+.final-project,
+.learning-project {
+  font-family: "Livvic", sans-serif;
+}
+
+.project-title {
+  font-family: "Manjari", sans-serif;
+  margin-left: 4rem;
+}
+
+.project-text {
+  font-family: "Livvic", sans-serif;
+  margin: 2rem 6rem;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
 }

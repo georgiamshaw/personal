@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1;
+  /* background-color: #fff1c1; */
 }
 
 .index-body,
@@ -161,7 +162,7 @@ body {
   order: 2;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 980px) {
   .content-wrap {
     width: 100vw;
     height: 70vh;
@@ -172,6 +173,16 @@ body {
     width: 100vw;
     height: 30vh;
     order: 1;
+  }
+
+  .final-projects-wrap {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .personal-projects-wrap {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -193,12 +204,14 @@ body {
   background-color: #fe5f55;
   grid-column-start: 1;
   grid-column-end: 2;
+  height: 100vh;
 }
 
 .blue-box {
   background-color: #293462;
   grid-column-start: 2;
   grid-column-end: 3;
+  height: 100vh;
 }
 
 .red-box-small {
@@ -407,8 +420,9 @@ body {
 /*-------------------------------PROJECTS-------------------------------------*/
 
 .final-projects-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   /* border: 2px solid black; */
   align-self: center;
 }
@@ -440,9 +454,9 @@ body {
 } */
 
 .learning-projects-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   /* border: 2px solid black; */
   align-self: center;
   /* margin-bottom: 3.5rem; */
@@ -465,7 +479,8 @@ body {
 }
 
 .final-project,
-.learning-project {
+.learning-project,
+.react-project {
   font-family: "Livvic", sans-serif;
 }
 
@@ -479,4 +494,29 @@ body {
   margin: 2rem 6rem;
   line-height: 1.5rem;
   font-size: 1.1rem;
+}
+
+.personal-projects-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
+  align-self: center;
+  /* margin-bottom: 3.5rem; */
+}
+
+.personal-project {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  background-color: #fff4d2;
+  margin: 1rem;
+  padding: 1.8rem;
+  /* border: 2px solid black; */
+  width: 12rem;
+  height: 12rem;
+  cursor: pointer;
+  align-self: center;
 }

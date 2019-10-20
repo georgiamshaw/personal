@@ -7,6 +7,11 @@ body {
   /* background-color: #fff1c1; */
 }
 
+a {
+  text-decoration: none;
+  color: #fff1c1;
+}
+
 .index-body,
 .white-box,
 .red-box-index-1,

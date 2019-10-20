@@ -6,6 +6,11 @@ body {
   line-height: 1;
 }
 
+a {
+  text-decoration: none;
+  color: #fff1c1;
+}
+
 .index-body,
 .white-box,
 .red-box-index-1,

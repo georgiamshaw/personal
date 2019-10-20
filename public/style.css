@@ -475,3 +475,28 @@ a {
 .project-text {
   padding: 0 2rem;
 }
+
+/* CONTACT PAGE */
+
+.contact-page-wrap {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.contact-github-wrap,
+.contact-telephone-wrap,
+.contact-email-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem;
+  justify-content: space-around;
+}
+
+.contact-github,
+.contact-telephone,
+.contact-email {
+  height: 2rem;
+  width: 2rem;
+}

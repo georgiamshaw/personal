@@ -486,14 +486,18 @@ body {
 
 .project-title {
   font-family: "Manjari", sans-serif;
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 
 .project-text {
   font-family: "Livvic", sans-serif;
-  margin: 2rem 6rem;
+  margin: 0.5rem 3rem 2rem;
   line-height: 1.5rem;
   font-size: 1.1rem;
+}
+
+#project-text-under-title {
+  margin-top: 1.5rem;
 }
 
 .personal-projects-wrap {

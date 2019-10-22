@@ -573,9 +573,6 @@ a {
 .project-title,
 .project-text {
   padding: 0 2rem;
-  /* border: 2px solid black; */
-  align-self: center;
-  /* margin-bottom: 3.5rem; */
 }
 
 .personal-project {
@@ -617,4 +614,16 @@ a {
 .contact-email {
   height: 2rem;
   width: 2rem;
+}
+
+.about-text {
+  font-family: "Livvic", sans-serif;
+  margin: 0.5rem 3rem 2rem;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  padding: 0 2rem;
+}
+
+#about-text-1 {
+  margin-top: 2rem;
 }
